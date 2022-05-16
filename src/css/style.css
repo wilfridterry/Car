@@ -2,13 +2,18 @@
     font-family: 'Roboto', sans-serif;
 }
 
-header {
-    position: relative;
-}
-
 nav {
+    position: fixed;
+    width: 100%;
     height: 50px;
     background-color: #212121;
+    z-index: 1;
+    top: 0;
+}
+
+header {
+    position: relative;
+    margin-top: 50px;
 }
 
 .menu {
@@ -156,18 +161,31 @@ nav {
     margin-top: 30px;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 900;
+    font-size: 30px;
 }
 
-.reasons .reason { 
-    padding: 30px 20px;
+.reasons .reason {
+    padding: 20px 30px;
 }
 
-.reasons .reason .icon_wrapper {
+.reasons .reason_icon_wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     background-color: #1EACC7;
-    border-radius: 100%;
+    width: 113px;
+    height: 113px;
+    border-radius: 50%;
 }
+
+
+.reasons .reason .reason_subheader {
+    color: #1EACC7;
+}
+
+
+.reasons .reason .reason_descr {
+    font-weight: 300;
+
+} 
