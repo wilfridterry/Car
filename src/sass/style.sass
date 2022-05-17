@@ -137,6 +137,7 @@ header
   margin: auto
   background-color: #000
   color: #fff
+  text-transform: uppercase
 
 .title
   margin-top: 30px
@@ -218,3 +219,31 @@ header
             margin: 0 auto
             border-radius: 50%
             cursor: pointer
+
+.car
+    min-height: 1000px
+    position: relative
+    &_subsection_1
+        min-height: 500px
+        background-color: #070716
+        padding-top: 50px
+        .label 
+            background-color: white
+            color: #000
+            width: 100px
+        .title, .subtitle
+            color: white
+    &_img
+        position: absolute
+        top: 25%
+        left: 50%
+        transform: translateX(-50%)
+        img 
+            width: 100%
+    &_subsection_2
+        min-height: 500px
+        background: url('../img/bg/mobile_app.png') no-repeat center center/cover
+        padding-top: 50px
+        &_descr
+          padding: 200px
+          text-align: center
