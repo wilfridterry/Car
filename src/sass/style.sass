@@ -323,4 +323,70 @@ header
       li
         &::before
           background: url('../icons/check_red.svg') no-repeat center center / cover
-          
+
+.world
+  min-height: 720px
+  background: url('../img/bg/map.jpg') no-repeat center center / cover
+  padding: 50px 0
+  .black 
+    background-color: white
+    color: #000
+    width: 100px
+  .white
+    color: white
+  &_link
+    display: block
+    text-decoration: none
+    color: $main-color
+    text-transform: uppercase
+    margin-top: 490px
+    text-align: center
+    &:hover
+      color: $second-color
+
+.footer
+  min-height: 150px
+  padding: 15px 0 30px 0
+  &_devider
+    width: 300px
+    margin: 0 auto
+    height: 5px
+    background-color: $main-color
+  .row
+    margin-top: 30px
+  &_icons
+  
+  &_nav
+    text-align: center
+    ul
+      list-style-type: none
+      margin: 0
+      li 
+        display: inline-block
+        a
+          text-decoration: none
+          color: #000
+          text-transform: uppercase
+          margin-right: 50px
+          font-weight: 300
+          font-size: 15px
+    &_second ul
+      margin-top: 10px
+      li a
+        color: #999
+        font-size: 11px
+        margin-right: 23px
+    &_language 
+      margin-top: 10px
+      text-align: center
+      a
+        text-decoration: none
+        font-size: 11px
+        color: $main-color
+        font-weight: 400
+        text-transform: uppercase
+
+  &_mobile img
+    display: block
+    margin-left: auto
+  
