@@ -1,0 +1,85 @@
+@media (max-width: 1200px)
+    .menu
+        &_item 
+            padding-right: 45px
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 45px
+    .reasons
+        &_block
+            align-items: flex-start
+            &_text
+                width: 300px
+            
+@media (max-width: 991px)
+    .menu
+        &_item 
+            padding-right: 23px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_btn
+            margin-top: 21px
+            height: 40px
+            width: 100%
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 30px
+    .reasons
+        &_block
+            flex-direction: column
+            align-items: center
+            &_text
+                width: 100%
+                margin-top: 20px
+
+@media (max-width: 768px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, .8)
+        transition: 1s left
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px
+        &_link
+            font-size: 20px
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        cursor: pointer
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: #fff
+            margin-top: 2px
+            transition: 0.5s all
+        &_active
+            span
+                margin-top: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(-45deg)
