@@ -892,4 +892,7 @@ header {
         -ms-flex-order: 3;
             order: 3;
   }
+  .footer_mobile {
+    width: 300px;
+  }
 }
